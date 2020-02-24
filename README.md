@@ -7,7 +7,7 @@ quransteps.wordpress.com, the script look for Quran words and their meanings hav
 The script looks for all the roots in Quran from the said file, 1670 found, and create a dictionary for the user. 
 The dictionary is created so that user can enter numeric value (married with root) instead of typing root in Arabic.
 
-The script also extract and display the rows (in Arabic) from the said file where the words found
+The script also does extract and display the rows (in Arabic) from the said file where the words found
 
 What's new in this version?
 1. 'choose your file' GUI window for user to select the file from the directory user has stored the file.
