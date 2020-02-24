@@ -1,8 +1,6 @@
 import pandas as pd
 from tkinter import filedialog
 import re
-import warnings
-warnings.filterwarnings("ignore") # ignores printing the warning
 
 print("Choose your file from the popped-up window \n")
 
@@ -10,7 +8,7 @@ root = filedialog.Tk
 root.filename = filedialog.askopenfilename(initialdir = "C:/Users/lab/PycharmProjects/excel1", title="choose your file", filetypes=(("excel files","*.xlsm"),("excel files","*.xlsx"),("excel files","*.xls"),("all files","*.*")))
 root.withdraw
 
-print("\nReading the file to display 1670 root words for you to choose from ........")
+print("Reading the file to display 1670 root words for you to choose from ........\n")
 
 df = pd.read_excel(root.filename, 'QuranTM')
 (rows, column) = df.shape
@@ -51,6 +49,7 @@ dr = ""
 
 
 def display():
+    print('You chose the root word ' + dictdslistfinal[int(dr)] + ' , here is the info in Quran for this root')
     for r in range(1, rows):
         for c in range(0, column + 1):
             if isinstance(df.values[r, c], str):
