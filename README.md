@@ -1,18 +1,17 @@
 # QuranSearch-v2
 Quran search powered by pandas and tkinter 
 
-Similar to earlier version, the script displays display meanings and lines from QuranTM.xlsm file downloaded from 
-quransteps.wordpress.com, the script look for Quran words and their meanings having the same root.
+Similar to the earlier version, the script looks for Quran words and their meanings having the same root from QuranTM.xlsm file, downloaded from quransteps.wordpress.com 
 
-The script looks for all the roots in Quran from the said file, 1670 found, and create a dictionary for the user. 
-The dictionary is created so that user can enter numeric value (married with root) instead of typing root in Arabic.
+At first the script looks for all the roots in Quran from the said file, 1670 found, and create a dictionary for the user. 
+The dictionary is created so that user can enter numeric value (married with root) instead of typing the root in Arabic.
 
 The script also does extract and display the rows (in Arabic) from the said file where the words found
 
 What's new in this version?
-1. 'choose your file' GUI window for user to select the file from the directory user has stored the file.
-2. pandas reads the file to built the data frames to write the script around rather than using pyexcel science.
-3. Better speed, specially for large db 
+1. GUI window to 'choose your file'; user selects the file from the directory where the file has been saved.
+2. pandas reads the file to built the data frames and the script is around around pandas, replacing the pyexcel.
+3. This gives better speed, specially for large dbs 
 
 Here is how it will look when you run
 
