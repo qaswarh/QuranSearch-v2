@@ -71,7 +71,6 @@ def display():
                     ds1 = df.values[r, c]
                     ds1 = re.sub('\[.*\]', "", ds1)
                     ds1 = re.sub('_x000D_', "", ds1)
-                    # ds1 = re.sub(None, "-", ds1)
                     nrc = "?,-().\""
                     for char in nrc:
                         ds1 = ds1.replace(char, "")  # english phrase left
